@@ -251,7 +251,7 @@ void handleSelection(std::vector<Student*>* classroom, std::string selection) {
 		  	 do {
 				   std::cout << "\t(enter an integer 1-3): ";
 				   std::cin >> searchBy;
-    		 } while (searchBy != "1" && searchBy != "2" && searchBy != "3");
+    		 } while (searchBy != "1" || searchBy != "2" || searchBy != "3");
  		 	   
  		     int newSearchBy;
 	       ss << searchBy;
@@ -343,7 +343,7 @@ void handleSelection(std::vector<Student*>* classroom, std::string selection) {
                    do {
                      std::cout << "\tGrade as integer (0 = F, 1 = D, 2 = C, 3 = B, 4 = A): ";
 	                   std::cin >> newInfo;
-                   } while (newInfo != "0" && newInfo != "1" && newInfo != "2" && newInfo != "3" && newInfo != "4");
+                   } while (newInfo != "0" || newInfo != "1" || newInfo != "2" || newInfo != "3" || newInfo != "4");
                    ss << newInfo;
                    ss >> newGrade;
                    ss.clear();
@@ -355,7 +355,7 @@ void handleSelection(std::vector<Student*>* classroom, std::string selection) {
                    do {
                      std::cout << "\tGrade as integer (0 = F, 1 = D, 2 = C, 3 = B, 4 = A): ";
 	                   std::cin >> newInfo;
-                   } while (newInfo != "0" && newInfo != "1" && newInfo != "2" && newInfo != "3" && newInfo != "4");
+                   } while (newInfo != "0" || newInfo != "1" || newInfo != "2" || newInfo != "3" || newInfo != "4");
                    ss << newInfo;
                    ss >> newGrade;
                    ss.clear();
@@ -367,7 +367,7 @@ void handleSelection(std::vector<Student*>* classroom, std::string selection) {
                    do {
                      std::cout << "\tGrade as integer (0 = F, 1 = D, 2 = C, 3 = B, 4 = A): ";
 	                   std::cin >> newInfo;
-                   } while (newInfo != "0" && newInfo != "1" && newInfo != "2" && newInfo != "3" && newInfo != "4");
+                   } while (newInfo != "0" || newInfo != "1" || newInfo != "2" || newInfo != "3" || newInfo != "4");
                    ss << newInfo;
                    ss >> newGrade;
                    ss.clear();
